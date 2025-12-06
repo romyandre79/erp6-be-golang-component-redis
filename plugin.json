@@ -1,0 +1,69 @@
+{
+    "componentname": "Redis",
+    "componenttitle": "Redis Cache",
+    "componentcategoryid": 3,
+    "componentclass": "redis",
+    "version": "0.0.1",
+    "createdby": "Prisma Data Abadi",
+    "input": 1,
+    "output": 1,
+    "details": [
+        {
+            "detailtype": "text",
+            "lable": "Redis Address",
+            "inputtype": "text",
+            "inputname": "addr",
+            "inputdesc": "Host:Port (e.g. localhost:6379)",
+            "order": 1
+        },
+        {
+            "detailtype": "password",
+            "lable": "Password",
+            "inputtype": "password",
+            "inputname": "password",
+            "inputdesc": "Redis Password (optional)",
+            "order": 2
+        },
+        {
+            "detailtype": "text",
+            "lable": "DB Index",
+            "inputtype": "number",
+            "inputname": "db",
+            "inputdesc": "Database Index (default 0)",
+            "order": 3
+        },
+        {
+            "detailtype": "select",
+            "lable": "Action",
+            "inputtype": "select",
+            "inputname": "action",
+            "inputdesc": "Operation to perform",
+            "order": 4,
+            "options": "get,set,del,exists,keys"
+        },
+        {
+            "detailtype": "text",
+            "lable": "Key / Pattern",
+            "inputtype": "text",
+            "inputname": "key",
+            "inputdesc": "Key name or pattern for keys search",
+            "order": 5
+        },
+        {
+            "detailtype": "textarea",
+            "lable": "Value",
+            "inputtype": "textarea",
+            "inputname": "value",
+            "inputdesc": "Value to set (for set action)",
+            "order": 6
+        },
+        {
+            "detailtype": "text",
+            "lable": "Expiration (sec)",
+            "inputtype": "number",
+            "inputname": "expiration",
+            "inputdesc": "Expiration in seconds (0 = no expiration)",
+            "order": 7
+        }
+    ]
+}
